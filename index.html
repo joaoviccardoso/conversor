@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moedas</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="./estilos/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <h1 class="titulo">Conversor</h1>
+        <div class="container__conversor">
+            <div class="itens__conversor">
+                    <label for="Valor" class="titulo__valor"> Valor:
+                        <input type="text" placeholder="Valor em R$:" min="1" max="99999" class="Valor" id="Valor" name="Valor">
+                    </label>
+                    
+                <div class="container__moeda">
+                    <select class="botao botao__selec">
+                        <option value="dolar é US$-5.36">Dolar</option>
+                        <option value="euro é €-5.77">Euro</option>
+                        <option value="libra é £-6.82">Libra</option>
+                    </select>   
+                </div>
+                
+                <div class="container__botao">
+                    <hr>
+                    <button onclick="conversor()" id="submit" class="botao calcular">calcular</button>
+                    <button onclick="limpar()" id="botao__limpar" class="botao calcular">limpar</button>
+                    <hr>
+                </div>
+
+                <div class="informacao">
+                    <h3 class="texto">valores das moedas tirada no dia: 13/06/2024</h3>
+                    <ul class="lista">
+                        <li class="lista__texto">Dolár: 1 Dólar americano igual a
+                            5,37 Real brasileiro</li>
+                        <li class="lista__texto">Euro: 1 Euro igual a
+                            5,77 Real brasileiro</li>
+                        <li class="lista__texto">Libra: 1 Libra esterlina igual a
+                            6,85 Real brasileiro</li>
+                    </ul>
+                </div>
+                <section>
+                <div class="resuldados" id="resuldados__conversor">
+                    <h3 class="texto__resposta">resuldado:</h3>
+                </div>
+                </section>
+            </div>
+            <footer class="rodape">
+                <div class="container__rodape">
+                    <h4 class="titulo__rodape">Criado por João Victor</h4>
+                    <ul class="lista__redes">
+                        <li class="lista"><a href="https://github.com/joaoviccardoso"><img src="./img/github.png" alt="logo do github" class="img__lista" width="60"></a></li>
+                        <li class="lista"><a href="https://www.instagram.com/joao__viccardoso/"><img src="./img/instagram.png" alt="logo do instagram" class="img__lista" width="60"></a></li>
+                        <li class="lista"><a href="https://www.linkedin.com/in/jo%C3%A3o-victor-da-silva-cardoso-b66315248/"><img src="./img/linkedin.png" alt="linkedin" class="img__lista" width="60"></a></li>
+                    </ul>
+                </div>
+            </footer>
+            <script src="app.js"></script>
+        </div>
+    </main>
+</body>
+</html>
