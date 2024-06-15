@@ -5,18 +5,18 @@ function conversor() {
     const nomeMoeda = moeda.split('-')[0];
     const valorMoeda = moeda.split('-')[1];
 
-    const conversao = valorDigitado / valorMoeda;
+    if (valorDigitado == NaN) {
+        alert('Digite um valor para poder fazer o calculo')
+        return;
+    }
 
-    console.log(nomeMoeda)
-    console.log(valorDigitado)
-    console.log(valorMoeda)
-    console.log(conversao.toFixed(2))
+    const conversao = valorDigitado / valorMoeda;
 
     const resposta = document.querySelector('section');
     resposta.innerHTML = resposta.innerHTML + ` <div class="resuldados" id="resuldados__conversor">
     <h3 class="texto__resposta">O valor convertido em Real para ${nomeMoeda} ${conversao.toFixed(2)}</h3></div>`
-    
-}
+}    
+
 
 
 
