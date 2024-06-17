@@ -22,13 +22,28 @@ function conversor() {
 
 botaoMudarCor.addEventListener('click', function(){
     const body = document.querySelector('body');
-    const titulo = document.querySelector('.titulo');
+    const titulo = document.querySelector('h1');
+    const tituloFooter = document.querySelector('h4');
 
-    if (body.classList.contains('corpo')) {
-       body.classList.remove('corpo');
-       body.classList.add('.corpo__white');
+    console.log(tituloFooter)
+
+    if (body.classList.contains('corpo__black')) {
+       body.classList.remove('corpo__black');
+       body.classList.add('corpo__white');
+
+       titulo.classList.remove('titulo');
+       titulo.classList.add('texto__white');
+
+       tituloFooter.classList.remove('titulo__rodape');
+       tituloFooter.classList.add('rodape__white');
     } else {
        body.classList.remove('corpo__white');
-       body.classList.add('corpo')  
+       body.classList.add('corpo__black');
+       
+       titulo.classList.remove('texto__white');
+       titulo.classList.add('titulo');
+
+       tituloFooter.classList.remove('rodape__white');
+       tituloFooter.classList.add('titulo__rodape');
     }
 })

@@ -22,7 +22,7 @@ main{
     align-content: space-between;
 }
 
-.corpo{
+.corpo__black{
     background: #1a1a1a;
 }
 
@@ -55,7 +55,19 @@ main{
     background-color: #e6e6e6;
 }
 
+.texto__white{
+    color: var(--cor-botao);
+
+    font-size: 2.2rem;
+    font-weight: 500;
+
+    margin:1rem 0 1rem 0;
+
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, .4);
+}
+
 .titulo{
+    color: var(--cor-letra);
     font-size: 2rem;
     font-weight: 500;
 
@@ -148,6 +160,14 @@ main{
     font-weight: 500;
 
     text-shadow: 1px 1px 1px var(--cor-luz);
+}
+
+.rodape__white{
+    color: var(--cor-botao);
+    font-size: 1.5rem;
+    font-weight: 500;
+
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .4); 
 }
 
 .lista__redes{
