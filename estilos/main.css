@@ -41,6 +41,20 @@ main{
     gap: 1rem;
 }
 
+.item__conversor-black{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 3rem;
+    padding: 2rem 1rem;
+    
+    border: 2px solid transparent;
+    border-radius: 32px;
+    box-shadow: 4px 4px 8px var(--cor-luz);
+
+    background-color: var(--cor-borda);
+}
+
 .itens__conversor{
     display: flex;
     flex-direction: column;

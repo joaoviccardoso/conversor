@@ -3,6 +3,9 @@ const body = document.querySelector('body');
 const titulo = document.querySelector('h1');
 const tituloFooter = document.querySelector('h4');
 const texto = document.querySelectorAll('.texto');
+const aplicativo = document.querySelector('.itens__conversor');
+
+console.log(aplicativo)
 
 
 function conversor() {
@@ -40,19 +43,25 @@ botaoMudarCor.addEventListener('click', function(){
             texto[c].classList.remove('texto');
             texto[c].classList.add('texto__claro');
         }
+
+        aplicativo.classList.remove('itens__conversor');
+        aplicativo.classList.add('item__conversor-black')
     } else{
-       body.classList.remove('corpo__white');
-       body.classList.add('corpo__black');
+        body.classList.remove('corpo__white');
+        body.classList.add('corpo__black');
        
-       titulo.classList.remove('texto__white');
-       titulo.classList.add('titulo');
+        titulo.classList.remove('texto__white');
+        titulo.classList.add('titulo');
 
-       tituloFooter.classList.remove('rodape__white');
-       tituloFooter.classList.add('titulo__rodape');
+        tituloFooter.classList.remove('rodape__white');
+        tituloFooter.classList.add('titulo__rodape');
 
-       for(let c = 0; c < texto.length; c++) {
-        texto[c].classList.remove('texto__claro');
-        texto[c].classList.add('texto');
-    }
+        for(let c = 0; c < texto.length; c++) {
+            texto[c].classList.remove('texto__claro');
+            texto[c].classList.add('texto');
+        }
+
+        aplicativo.classList.remove('item__conversor-black');
+        aplicativo.classList.add('itens__conversor')
     }
 })
