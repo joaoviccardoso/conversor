@@ -118,30 +118,8 @@ main{
     border-bottom: 1px solid var(--cor-borda);
 }
 
-.botao{
-    width: 10rem;    
-    margin-left: .2rem;
-
-    border: solid 1px var(--cor-borda);
-    border-radius: 6px;
-    box-shadow: 2px 2px 7px var(--cor-luz);
-
-    background-color: var(--cor-borda);
-    margin: 1rem 0;
-
-    font-size: 1rem;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: var(--cor-letra); 
-}
-
 .modo__claroEscuro{
     width: 6rem;
-}
-
-.calcular{
-    width: 5rem;
 }
 
 .texto__resposta{
@@ -158,37 +136,7 @@ main{
     font-weight: 500;
 }
 
-.container__rodape{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    row-gap: .8rem;
 
-    margin-top: 2rem ;
-}
-
-.titulo__rodape{
-    font-size: 1.5rem;
-    font-weight: 500;
-
-    text-shadow: 1px 1px 1px var(--cor-luz);
-}
-
-.rodape__white{
-    color: var(--cor-botao);
-    font-size: 1.5rem;
-    font-weight: 500;
-
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, .4); 
-}
-
-.lista__redes{
-    display: flex;
-    column-gap: .6rem;
-
-    margin-bottom: 1rem;
-}
 
 @media (min-width:800px) and (max-width:1440px) {
     .container__conversor{
