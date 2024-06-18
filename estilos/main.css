@@ -137,12 +137,11 @@ main{
 .texto{
     color: var(--cor-borda);
     font-weight: 500;
-    margin-bottom: .2rem;
 }
 
-.lista__texto{
-    color: var(--cor-borda);
-    font-size: .8rem;
+.texto__claro{
+    color: var(--cor-letra);
+    font-weight: 500;
 }
 
 .container__rodape{

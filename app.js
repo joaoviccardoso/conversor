@@ -1,4 +1,9 @@
 const botaoMudarCor = document.querySelector('.modo__claroEscuro');
+const body = document.querySelector('body');
+const titulo = document.querySelector('h1');
+const tituloFooter = document.querySelector('h4');
+const texto = document.querySelectorAll('.texto');
+
 
 function conversor() {
     const valorDigitado = parseFloat(document.querySelector('#Valor').value);
@@ -21,22 +26,21 @@ function conversor() {
 }    
 
 botaoMudarCor.addEventListener('click', function(){
-    const body = document.querySelector('body');
-    const titulo = document.querySelector('h1');
-    const tituloFooter = document.querySelector('h4');
-
-    console.log(tituloFooter)
-
     if (body.classList.contains('corpo__black')) {
-       body.classList.remove('corpo__black');
-       body.classList.add('corpo__white');
+        body.classList.remove('corpo__black');
+        body.classList.add('corpo__white');
 
-       titulo.classList.remove('titulo');
-       titulo.classList.add('texto__white');
+        titulo.classList.remove('titulo');
+        titulo.classList.add('texto__white');
 
-       tituloFooter.classList.remove('titulo__rodape');
-       tituloFooter.classList.add('rodape__white');
-    } else {
+        tituloFooter.classList.remove('titulo__rodape');
+        tituloFooter.classList.add('rodape__white');
+       
+        for(let c = 0; c < texto.length; c++) {
+            texto[c].classList.remove('texto');
+            texto[c].classList.add('texto__claro');
+        }
+    } else{
        body.classList.remove('corpo__white');
        body.classList.add('corpo__black');
        
@@ -45,5 +49,10 @@ botaoMudarCor.addEventListener('click', function(){
 
        tituloFooter.classList.remove('rodape__white');
        tituloFooter.classList.add('titulo__rodape');
+
+       for(let c = 0; c < texto.length; c++) {
+        texto[c].classList.remove('texto__claro');
+        texto[c].classList.add('texto');
+    }
     }
 })
