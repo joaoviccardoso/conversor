@@ -5,3 +5,7 @@
     --cor-botao: #1a1a1a;
 }
 
+.container__moeda{
+    border-top: 1px solid var(--cor-borda);
+    border-bottom: 1px solid var(--cor-borda);
+}

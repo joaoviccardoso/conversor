@@ -15,13 +15,6 @@ body{
     color: var(--cor-letra);
 }
 
-main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: space-between;
-}
-
 .corpo__black{
     background: #1a1a1a;
 }
@@ -30,113 +23,12 @@ main{
     background: #f2f2f2;
 }
 
-.container__conversor{
-    width: 70%;
-}
-
-.modo{
-    display: flex;
-    align-items: center;
-    text-align: center;
-    gap: 1rem;
-}
-
-.item__conversor-black{
+main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    row-gap: 3rem;
-    padding: 2rem 1rem;
-    
-    border: 2px solid transparent;
-    border-radius: 32px;
-    box-shadow: 4px 4px 8px var(--cor-luz);
-
-    background-color: var(--cor-borda);
+    align-content: space-between;
 }
-
-.itens__conversor{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    row-gap: 3rem;
-    padding: 2rem 1rem;
-    
-    border: 2px solid var(--cor-borda);
-    border-radius: 32px;
-    box-shadow: 4px 4px 8px var(--cor-luz);
-
-    background-color: #e6e6e6;
-}
-
-.texto__white{
-    color: var(--cor-botao);
-
-    font-size: 2.2rem;
-    font-weight: 500;
-
-    margin:1rem 0 1rem 0;
-
-    text-shadow: 3px 3px 3px rgba(0, 0, 0, .4);
-}
-
-.titulo{
-    color: var(--cor-letra);
-    font-size: 2rem;
-    font-weight: 500;
-
-    margin:1rem 0 1rem 0;
-
-    text-shadow: 1px 1px 1px var(--cor-luz);
-}
-
-.titulo__valor{
-    color: var(--cor-borda);
-    width: 80%;
-    font-weight: 500;
-}
-
-.Valor{
-    width: 100%;
-    height: 1.2rem;
-
-    border: solid 1px var(--cor-borda);
-    border-radius: 6px;
-    box-shadow: 2px 2px 7px var(--cor-luz);
-
-    background-color: var(--cor-borda);
-
-    font-size: 1rem;
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    color: var(--cor-letra);
-}
-
-.container__moeda{
-    border-top: 1px solid var(--cor-borda);
-    border-bottom: 1px solid var(--cor-borda);
-}
-
-.modo__claroEscuro{
-    width: 6rem;
-}
-
-.texto__resposta{
-    color: var(--cor-borda);
-}
-
-.texto{
-    color: var(--cor-borda);
-    font-weight: 500;
-}
-
-.texto__claro{
-    color: var(--cor-letra);
-    font-weight: 500;
-}
-
-
 
 @media (min-width:800px) and (max-width:1440px) {
     .container__conversor{

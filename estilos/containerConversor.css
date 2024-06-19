@@ -1,0 +1,62 @@
+:root{
+    --cor-borda: #4d4d4d;
+    --cor-luz: #ccffdc;
+    --cor-letra: #e6e6e6;
+    --cor-botao: #1a1a1a;
+}
+
+
+.container__conversor{
+    width: 70%;
+}
+
+.itens__conversor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 3rem;
+    padding: 2rem 1rem;
+    
+    border: 2px solid var(--cor-borda);
+    border-radius: 32px;
+    box-shadow: 4px 4px 8px var(--cor-luz);
+
+    background-color: #e6e6e6;
+}
+
+.item__conversor-black{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 3rem;
+    padding: 2rem 1rem;
+    
+    border: 2px solid transparent;
+    border-radius: 32px;
+    box-shadow: 4px 4px 8px var(--cor-luz);
+
+    background-color: var(--cor-borda);
+}
+
+.titulo__valor{
+    color: var(--cor-borda);
+    width: 80%;
+    font-weight: 500;
+}
+
+.Valor{
+    width: 100%;
+    height: 1.2rem;
+
+    border: solid 1px var(--cor-borda);
+    border-radius: 6px;
+    box-shadow: 2px 2px 7px var(--cor-luz);
+
+    background-color: var(--cor-borda);
+
+    font-size: 1rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: var(--cor-letra);
+}
