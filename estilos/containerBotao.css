@@ -9,11 +9,11 @@
     width: 10rem;    
     margin-left: .2rem;
 
-    border: solid 1px var(--cor-borda);
+    border: solid 1px var(--cor-botao);
     border-radius: 6px;
     box-shadow: 2px 2px 7px var(--cor-luz);
 
-    background-color: var(--cor-borda);
+    background-color: var(--cor-botao);
     margin: 1rem 0;
 
     font-size: 1rem;
