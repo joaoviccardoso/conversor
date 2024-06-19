@@ -4,13 +4,11 @@ const titulo = document.querySelector('h1');
 const tituloFooter = document.querySelector('h4');
 const texto = document.querySelectorAll('.texto');
 const aplicativo = document.querySelector('.itens__conversor');
-
-console.log(aplicativo)
-
+const textoResuldado = document.querySelector('.texto__resposta');
 
 function conversor() {
     const valorDigitado = parseFloat(document.querySelector('#Valor').value);
-    const moeda = document.querySelector('.botao').value;
+    const moeda = document.querySelector('.botao__selec').value;
     console.log(valorDigitado);
     
     const nomeMoeda = moeda.split('-')[0];
@@ -25,7 +23,7 @@ function conversor() {
 
     const resposta = document.querySelector('section');
     resposta.innerHTML = resposta.innerHTML + ` <div class="resuldados" id="resuldados__conversor">
-    <h3 class="texto__resposta">O valor convertido em Real para ${nomeMoeda} ${conversao.toFixed(2)}</h3></div>`
+    <h3 class="texto__resposta" font-size: 1rem;>O valor convertido em Real para ${nomeMoeda} ${conversao.toFixed(2)}</h3></div>`
 }    
 
 botaoMudarCor.addEventListener('click', function(){
@@ -45,7 +43,10 @@ botaoMudarCor.addEventListener('click', function(){
         }
 
         aplicativo.classList.remove('itens__conversor');
-        aplicativo.classList.add('item__conversor-black')
+        aplicativo.classList.add('item__conversor-black');
+
+        textoResuldado.classList.remove('texto__resposta');
+        textoResuldado.classList.add('texto__resposta-claro');
     } else{
         body.classList.remove('corpo__white');
         body.classList.add('corpo__black');
@@ -63,5 +64,8 @@ botaoMudarCor.addEventListener('click', function(){
 
         aplicativo.classList.remove('item__conversor-black');
         aplicativo.classList.add('itens__conversor')
+
+        textoResuldado.classList.remove('texto__resposta-claro');
+        textoResuldado.classList.add('texto__resposta');
     }
 })

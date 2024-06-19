@@ -9,3 +9,16 @@
     color: var(--cor-borda);
 }
 
+.texto__resposta{
+    color: var(--cor-botao);
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-shadow: 0 1px 1px var(--cor-luz);
+}
+
+.texto__resposta-claro{
+    color: var(--cor-letra);
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-shadow: 0 1px 1px var(--cor-luz);
+}
