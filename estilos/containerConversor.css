@@ -6,9 +6,9 @@
 }
 
 
-.container__conversor{
+/*.container__conversor{
     width: 70%;
-}
+}*/
 
 .itens__conversor{
     display: flex;
@@ -16,6 +16,7 @@
     align-items: center;
     row-gap: 3rem;
     padding: 2rem 1rem;
+    margin: 0 2rem;
     
     border: 2px solid var(--cor-borda);
     border-radius: 32px;
@@ -40,7 +41,7 @@
 
 .titulo__valor{
     color: var(--cor-botao);
-    width: 80%;
+    width: 90%;
     font-weight: 500;
     font-size: 1.1rem;
 }

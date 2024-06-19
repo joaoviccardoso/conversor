@@ -30,25 +30,12 @@ main{
     align-content: space-between;
 }
 
-@media (min-width:800px) and (max-width:1440px) {
+@media (min-width: 570px) and (max-width:1600px){
+    .itens__conversor{
+        width: 345px;
+    }
+
     .container__conversor{
-        width: 40%;
-    }
-
-    .titulo__rodape{
-        font-size: 2rem;
-    }
-}
-
-@media (min-width:920px) and (max-width:1440px){
-    .container__moeda{
-        display: flex;
-        justify-content: center;
-        width: 90%; 
-        align-items: center;
-    }
-
-    .botao__selec{
-        width: 15rem;
+        width: auto;
     }
 }
