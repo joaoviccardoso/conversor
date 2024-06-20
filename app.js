@@ -5,6 +5,8 @@ const tituloFooter = document.querySelector('h4');
 const texto = document.querySelectorAll('.texto');
 const aplicativo = document.querySelector('.itens__conversor');
 const textoResuldado = document.querySelector('.texto__resposta');
+let modoClaro = "./img/sun.svg"
+let modoEscuro = "./img/moon.svg"
 
 function conversor() {
     const valorDigitado = parseFloat(document.querySelector('#Valor').value);
@@ -26,7 +28,12 @@ function conversor() {
     <h3 class="texto__resposta" font-size: 1rem;>O valor convertido em Real para ${nomeMoeda} ${conversao.toFixed(2)}</h3></div>`
 }    
 
-botaoMudarCor.addEventListener('click', function(){
+function modoClaroEscuro() {
+    const foto = document.querySelector('.imagemClaroEscuro').src = modoClaro;
+    let aux = modoClaro;
+    modoClaro = modoEscuro;
+    modoEscuro = aux;
+
     if (body.classList.contains('corpo__black')) {
         body.classList.remove('corpo__black');
         body.classList.add('corpo__white');
@@ -68,4 +75,4 @@ botaoMudarCor.addEventListener('click', function(){
         textoResuldado.classList.remove('texto__resposta-claro');
         textoResuldado.classList.add('texto__resposta');
     }
-})
+}
