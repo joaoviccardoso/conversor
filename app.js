@@ -5,35 +5,32 @@ const tituloFooter = document.querySelector('h4');
 const texto = document.querySelectorAll('.texto');
 const aplicativo = document.querySelector('.itens__conversor');
 const textoResuldado = document.querySelector('.texto__resposta');
+const imgBt = document.querySelector('.imagemClaroEscuro');
+const textoBt = document.querySelector('.textoBt');
+
 let modoClaro = "./img/sun.svg"
 let modoEscuro = "./img/moon.svg"
 
 function conversor() {
     const valorDigitado = parseFloat(document.querySelector('#Valor').value);
     const moeda = document.querySelector('.botao__selec').value;
-    console.log(valorDigitado);
     
     const nomeMoeda = moeda.split('-')[0];
     const valorMoeda = moeda.split('-')[1];
 
     if (isNaN(valorDigitado)) {
         alert('Digite um valor para poder fazer o calculo');
-        return;
+       return;
     }
 
     const conversao = valorDigitado / valorMoeda;
 
     const resposta = document.querySelector('section');
-    resposta.innerHTML = resposta.innerHTML + ` <div class="resuldados" id="resuldados__conversor">
+    resposta.innerHTML = ` <div class="resuldados" id="resuldados__conversor">
     <h3 class="texto__resposta" font-size: 1rem;>O valor convertido em Real para ${nomeMoeda} ${conversao.toFixed(2)}</h3></div>`
 }    
 
 function modoClaroEscuro() {
-    const foto = document.querySelector('.imagemClaroEscuro').src = modoClaro;
-    let aux = modoClaro;
-    modoClaro = modoEscuro;
-    modoEscuro = aux;
-
     if (body.classList.contains('corpo__black')) {
         body.classList.remove('corpo__black');
         body.classList.add('corpo__white');
@@ -54,6 +51,9 @@ function modoClaroEscuro() {
 
         textoResuldado.classList.remove('texto__resposta');
         textoResuldado.classList.add('texto__resposta-claro');
+
+        imgBt.src = modoClaro;
+        textoBt.textContent = "claro"
     } else{
         body.classList.remove('corpo__white');
         body.classList.add('corpo__black');
@@ -74,5 +74,12 @@ function modoClaroEscuro() {
 
         textoResuldado.classList.remove('texto__resposta-claro');
         textoResuldado.classList.add('texto__resposta');
+
+        imgBt.src = modoEscuro;
+        textoBt.textContent = "Escuro"
     }
+}
+
+function limpar(){
+    let respostaLimpar = document.querySelector('section').innerHTML = '';
 }
